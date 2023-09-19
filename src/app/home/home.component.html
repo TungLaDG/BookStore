@@ -1,0 +1,26 @@
+<!-- blog container -->
+<div class="blog-container">
+    <!-- blog 1 -->
+    <div class="blog-box" *ngFor="let post of this.cart.news">
+      <div class="blog-img">
+        <img [src]="post.Image" alt="Blog">
+      </div>
+      <div class="blog-text">
+        <!-- <div>{{post.id}}</div> -->
+       
+  
+        <a href="#" class="blog-title">{{post.Name}}</a>
+        <span>{{post.Price}}</span>
+        <p>
+          {{post.Discription}}
+        </p>
+        <div>Số lượng còn lại: {{post.Status}}</div>
+  
+        <!-- <button  class="order" (click)="this.cart.addCart(post)">Đặt Mua</button> -->
+        <div class="example-button-row">
+          <button mat-raised-button (click)="this.cart.addCart(post)">Đặt Mua</button>
+
+      </div>
+     
+    </div>
+</div>
