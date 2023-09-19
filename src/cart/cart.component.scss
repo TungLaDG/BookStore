@@ -116,4 +116,20 @@
 
   }
   
-  
+  /* CSS cho class "btn btn-warning w-100" */
+.btn.btn-warning.w-100 {
+  /* Thêm các thuộc tính CSS bạn muốn áp dụng cho class này ở đây */
+  background-color: #ffc107; /* Màu nền */
+  color: #fff; /* Màu chữ */
+  padding: 10px 20px; /* Khoảng cách bên trong nút */
+  border-radius: 5px; /* Góc bo tròn */
+  font-size: 1rem; /* Kích thước chữ */
+  text-align: center; /* Căn giữa nội dung */
+  /* ...Thêm các thuộc tính khác tùy ý */
+}
+
+/* Hover state */
+.btn.btn-warning.w-100:hover {
+  background-color: #ff9800; /* Màu nền khi hover */
+  /* ...Thêm các thuộc tính khác tùy ý cho trạng thái hover */
+}
