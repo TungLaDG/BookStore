@@ -1,0 +1,33 @@
+<!-- blog container -->
+<div class="blog-container">
+    <!-- blog 1 -->
+    <div class="blog-box" *ngFor="let index of listCart">
+      <div class="blog-img">
+        <img [src]="index.Image" alt="Blog">
+      </div>
+      <div class="blog-text">
+        <!-- <div>{{post.id}}</div> -->
+        <a href="#" class="blog-title">{{index.Name}}</a>
+        <span>{{index.Price}}</span>
+        <p>
+          {{index.Discription}}
+        </p>
+        <div>Số lượng còn lại: {{index.Status}}</div>
+      </div>
+    </div>
+</div>
+<!-- <button (click)="this.productCart.totalCart()" class="material-icons">shopping_cart</button>
+<p>{{productCart.total}}</p> -->
+
+<!-- <div class="cart" *ngFor="let index of listCart>
+  <button mat-button (click)="decrease()" class="cart-sub">-</button>
+  <p id="a">{{count}}</p>
+  <button mat-button (click)="increase()" class="cart-add">+</button>
+  <a href="#" class="order-1">Thành Tiền</a>
+</div> -->
+
+
+
+
+
+
