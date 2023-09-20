@@ -9,8 +9,10 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class HomeComponent {
  
-  constructor( public cart:CartService){}
-  
+  constructor(private router :Router, public cart:CartService){}
+  navigate(url:string){
+    this.router.navigateByUrl(url)
+  }
   }
 
  

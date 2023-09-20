@@ -8,6 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./nar-bar.component.scss']
 })
 export class NarBarComponent {
+  constructor(private router :Router){}
+  navigate(url:string){
+    this.router.navigateByUrl(url)
   }
+  
+}
   
 
