@@ -1,30 +1,66 @@
+/* Thiết kế toàn bộ form */
 .container {
-    padding: 20px;
-  }
-  
-  .alert {
-    background-color: #28a745;
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .form-control {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  .total-amount {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
+  max-width: 500px; /* Giới hạn chiều rộng của form */
+  margin: 0 auto; /* Căn giữa form trên màn hình */
+  padding: 20px; /* Khoảng cách xung quanh form */
+  background-color: #f5f5f5; /* Màu nền xám nhạt */
+  border-radius: 10px; /* Góc bo tròn cho form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+}
+
+/* Thiết kế tiêu đề "THANH TOÁN ĐƠN HÀNG" */
+.alert-success {
+  background-color: #28a745; /* Màu nền xanh lá cây */
+  color: #fff; /* Màu chữ trắng */
+  padding: 15px; /* Khoảng cách bên trong */
+  font-size: 28px; /* Kích thước chữ */
+  text-align: center; /* Căn giữa nội dung */
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  border-radius: 10px; /* Góc bo tròn */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+}
+
+/* Thiết kế các trường nhập và nhãn */
+label {
+  font-weight: bold; /* In đậm */
+  margin-bottom: 5px; /* Khoảng cách dưới nhãn */
+}
+
+/* Thiết kế các trường nhập */
+.form-control {
+  width: 100%; /* Chiều rộng 100% */
+  padding: 10px; /* Khoảng cách bên trong */
+  border: 1px solid #ccc; /* Viền xám nhạt */
+  border-radius: 5px; /* Góc bo tròn */
+  margin-bottom: 15px; /* Khoảng cách dưới trường nhập */
+  transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp màu viền */
+}
+
+/* Thiết kế trường nhập khi tập trung vào nó */
+.form-control:focus {
+  border-color: #007bff; /* Màu viền xanh lam khi tập trung */
+}
+
+/* Thiết kế nút "Lưu đơn hàng" */
+.btn-primary {
+  background-color: #007bff; /* Màu nền xanh lam */
+  color: #fff; /* Màu chữ trắng */
+  padding: 10px 20px; /* Khoảng cách bên trong */
+  border: none; /* Không có viền */
+  border-radius: 5px; /* Góc bo tròn */
+  cursor: pointer; /* Con trỏ tay khi di chuột vào */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp màu nền */
+}
+
+/* Thiết kế nút "Lưu đơn hàng" khi di chuột vào */
+.btn-primary:hover {
+  background-color: #0056b3; /* Màu nền xanh lam đậm khi di chuột vào */
+}
+
+/* Thiết kế phần hiển thị tổng tiền */
+.total-amount {
+  font-size: 24px; /* Kích thước chữ */
+  font-weight: bold; /* In đậm */
+  margin-top: 15px; /* Khoảng cách phía trên */
+  text-align: center; /* Căn giữa nội dung */
+}

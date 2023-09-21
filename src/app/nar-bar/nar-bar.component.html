@@ -1,32 +1,39 @@
-<nav >
-    <div class="content-nav">
-      <ul style="list-style: none;">
-        <li><a href="">Trang Chủ</a></li>
-        <li><a href="#">Sản Phẩm</a></li>
-        <li><a href="#">Liên Hệ</a></li>
-        <li><a href="/inform">Giới Thiệu</a></li>
-      </ul>
-  
-      <form>
-        <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
-        
-      </form>
-      <!-- The Modal -->
-      <!-- [routerLink]="['/cart']" -->
-      <button id="cart" (click)="navigate('/cart')" >
-        <i class="fa fa-shopping-basket"></i>
-        Giỏ Hàng
-      </button>
-  
-   
-      
-    </div>
-   
-    
-    <!-- <div  *ngIf="this.authService.currentUser" class="logout">
-      <p class="login-name"> {{authService.currentUser.}}</p>
-   </div>  -->
-  </nav>
-  
-  
-  
+<nav>
+  <div class="content-nav">
+    <ul style="list-style: none;">
+      <li><a href="">Trang Chủ</a></li>
+      <!-- <li><a href="#">Sản Phẩm</a></li> -->
+      <button [cdkMenuTriggerFor]="menu" class="example-standalone-trigger">Sản Phẩm</button>
+
+      <ng-template #menu>
+        <div class="example-menu" cdkMenu>
+          <button class="example-menu-item" cdkMenuItem>Mới</button>
+          <button class="example-menu-item" cdkMenuItem>Nổi bật</button>
+
+        </div>
+      </ng-template>
+      <li><a href="#">Liên Hệ</a></li>
+      <li><a href="/inform">Giới Thiệu</a></li>
+    </ul>
+
+    <!-- Trong navbar.component.html -->
+    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." [(ngModel)]="searchTerm"
+      (ngModelChange)="onSearchChange()" />
+
+
+
+
+    <!-- The Modal -->
+    <!-- [routerLink]="['/cart']" -->
+    <button id="cart" (click)="navigate('/cart')">
+      <i class="fa fa-shopping-basket"></i>
+      Giỏ Hàng
+    </button>
+
+
+
+  </div>
+
+
+
+</nav>

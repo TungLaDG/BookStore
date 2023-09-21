@@ -1,0 +1,56 @@
+/* CSS cho trang chi tiết sản phẩm */
+
+/* Container chung */
+.detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Canh lề trên cho các phần tử con */
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Phần hình ảnh sản phẩm */
+.detail-img {
+  flex: 1;
+  margin-left: 100px;
+  
+}
+
+.detail-img img {
+  max-width: 50%;
+  height: 50%;
+  
+}
+
+/* Phần thông tin sản phẩm */
+.detail-text {
+  flex: 2;
+}
+
+.detail-text h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.detail-text span {
+  font-size: 18px;
+  color: #e44d26; /* Màu chữ cho giá sản phẩm */
+}
+
+.detail-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.detail-text div {
+  font-size: 14px;
+  color: #666; /* Màu chữ cho thông tin khác */
+}
+
+/* Hiển thị số lượng sản phẩm còn lại với màu đỏ nếu hết hàng */
+.detail-text .out-of-stock {
+  color: #e44d26;
+}
