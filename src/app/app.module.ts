@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NarBarComponent } from './nar-bar/nar-bar.component';
 import { ThanhToanComponent } from './thanh-toan/thanh-toan.component';
+import {CdkMenuModule} from '@angular/cdk/menu';
+import {MatSnackBarModule } from '@angular/material/snack-bar';
+import { DetailComponent } from './detail/detail.component';
+
+
 
 
 @NgModule({
@@ -13,6 +18,8 @@ import { ThanhToanComponent } from './thanh-toan/thanh-toan.component';
     AppComponent,
     NarBarComponent,
     ThanhToanComponent,
+    DetailComponent,
+   
    
   ],
   imports: [
@@ -21,6 +28,11 @@ import { ThanhToanComponent } from './thanh-toan/thanh-toan.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    CdkMenuModule,
+    MatSnackBarModule,
+   
+    
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

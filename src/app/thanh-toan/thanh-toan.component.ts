@@ -4,10 +4,11 @@ import { CartService } from 'src/app/services/cart.service';
 @Component({
   selector: 'app-thanh-toan',
   templateUrl: './thanh-toan.component.html',
-  styleUrls: ['./thanh-toan.component.scss']
+  styleUrls: ['./thanh-toan.component.scss'],
+  
 })
 export class ThanhToanComponent implements OnInit {
-
+ 
   listCart: any[] = [];
   totalAmount: number = 0; // Biến để lưu tổng tiền
 
