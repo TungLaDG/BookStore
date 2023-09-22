@@ -8,7 +8,7 @@
     </div>
     <div class="blog-text">
       <a [routerLink]="['/detail', post.id]" class="blog-title">{{ post.Name }}</a>
-      <span>{{ post.Price }}</span>
+      <span>{{ post.Price | currency: 'VND' }}</span>
       <p>{{ post.Discription }}</p>
       <div>Số lượng còn lại: {{ post.Status }}</div>
       <div class="example-button-row">

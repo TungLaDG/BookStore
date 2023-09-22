@@ -18,9 +18,7 @@ export class HomeComponent {
   viewProductDetail(productId: number) {
     this.router.navigate(['product', productId]);
   }
-  navigate(url: string) {
-    this.router.navigateByUrl(url);
-  }
+ 
 
   addToCart(post: any) {
     // Thêm sản phẩm vào giỏ hàng (hoặc thực hiện xử lý tương tự)
