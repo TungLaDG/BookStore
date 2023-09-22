@@ -3,7 +3,8 @@
   <!-- blog 1 -->
   <div class="blog-box" *ngFor="let post of cart.searchResults.length > 0 ? cart.searchResults : cart.news">
     <div class="blog-img">
-      <img [src]="post.Image" alt="Blog">
+      <img [routerLink]="['/detail', post.id]" [src]="post.Image" alt="Blog">
+      <span *ngIf="post.IsNew" class="new-label">Mới</span> <!-- Hiển thị nhãn "Mới" nếu sản phẩm là sản phẩm mới -->
     </div>
     <div class="blog-text">
       <a [routerLink]="['/detail', post.id]" class="blog-title">{{ post.Name }}</a>

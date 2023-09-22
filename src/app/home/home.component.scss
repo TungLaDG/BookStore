@@ -116,4 +116,42 @@
     outline: none;
   }
   
-  
+  /* Tạo kiểu cho nút "Đặt Mua" */
+.example-button-row button {
+  background-color: #f33c3c; /* Màu nền cho nút "Đặt Mua" */
+  color: #fff; /* Màu chữ trắng */
+  border: none; /* Loại bỏ viền */
+  border-radius: 5px; /* Độ cong cho các góc của nút */
+  padding: 10px 20px; /* Kích thước và khoảng cách bên trong nút */
+  cursor: pointer; /* Biểu tượng con trỏ khi di chuột qua nút */
+  transition: background-color 0.3s ease; /* Hiệu ứng màu nền thay đổi màu chuyển động */
+}
+
+.example-button-row button:hover {
+  background-color: #ff6666; /* Màu nền thay đổi khi di chuột qua nút */
+}
+
+
+ /* Thêm kiểu cho nhãn "Mới" */
+/* Kiểu cho nhãn "Mới" */
+.new-label {
+  position: absolute; /* Để căn chỉnh vị trí của nhãn "Mới" */
+  background-color: #00cc00; /* Màu nền cho nhãn "Mới" */
+  color: #fff; /* Màu chữ trắng */
+  padding: 5px 10px; /* Kích thước và khoảng cách của nhãn "Mới" */
+  border-radius: 5px; /* Độ cong cho các góc của nhãn "Mới" */
+  z-index: 1; /* Để nhãn "Mới" hiển thị trên hình ảnh */
+  font-weight: bold; /* Đậm chữ của nhãn "Mới" */
+  font-size: 14px; /* Kích thước chữ của nhãn "Mới" */
+ 
+   
+}
+
+
+
+/* Tạo kiểu khi di chuột qua sản phẩm */
+.blog-box:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Hiển thị đổ bóng khi di chuột qua sản phẩm */
+}
+
+
