@@ -10,6 +10,7 @@ import {CdkMenuModule} from '@angular/cdk/menu';
 import {MatSnackBarModule } from '@angular/material/snack-bar';
 import { DetailComponent } from './detail/detail.component';
 import { GioithieuComponent } from './gioithieu/gioithieu.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -21,6 +22,9 @@ import { GioithieuComponent } from './gioithieu/gioithieu.component';
     ThanhToanComponent,
     DetailComponent,
     GioithieuComponent,
+
+
+    FooterComponent,
 
 
   ],
