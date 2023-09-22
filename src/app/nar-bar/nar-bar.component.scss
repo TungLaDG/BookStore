@@ -3,38 +3,38 @@
     padding: 15px;
     width: 100%;
     background-color: #f0efef;
-    
+
   }
- 
+
   nav .content-nav {
     display: flex;
     line-height: 3rem;
     flex-direction: row;
     justify-content:center;
     width: 100%;
-  
+
   }
-  
+
   nav .content-nav ul {
     display: flex;
-  
+    margin-top: 10px;
   }
-  
+
   nav .content-nav ul li a {
     text-decoration: none;
     color: #43433e;
     text-transform: uppercase;
     padding: 0 15px;
     font-weight: 800;
-    
+
   }
-  
+
   nav .content-nav ul li a:hover {
     color: red;
   }
-  
 
-  
+
+
   .content-nav form input {
     border: none;
     background: #fff;
@@ -43,8 +43,8 @@
     border-radius: 5px;
     margin-top: 20px;
   }
-  
-  
+
+
   #cart {
     font-size: 15px;
     color: #fff;
@@ -54,13 +54,13 @@
     outline: none;
     padding: 10px;
     cursor: pointer;
-    
+
   }
-  
+
   #cart:hover {
     border-color: #fff;
   }
-  
+
   .example-menu {
     display: inline-flex;
     flex-direction: column;
@@ -90,7 +90,7 @@
     align-items: center;
     flex-direction: row;
     flex: 1;
-    font-size: 1rem;   
+    font-size: 1rem;
     font-weight: 550;
     text-decoration: none;
     color: #43433e;
@@ -99,16 +99,16 @@
   .example-standalone-trigger:hover {
     color: red;
   }
-  
+
   .example-menu-item:hover {
     background-color: rgb(208, 208, 208);
     color: red;
   }
-  
+
   .example-menu-item:active {
     background-color: rgb(170, 170, 170);
   }
-  
+
   .example-standalone-item {
     background-color: rgb(239, 239, 239);
   }
@@ -118,6 +118,6 @@
   .example-standalone-item[aria-expanded='true'] {
     background-color: rgb(208, 208, 208);
   }
-  
+
 
 
