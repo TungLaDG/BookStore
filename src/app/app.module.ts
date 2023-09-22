@@ -9,6 +9,7 @@ import { ThanhToanComponent } from './thanh-toan/thanh-toan.component';
 import {CdkMenuModule} from '@angular/cdk/menu';
 import {MatSnackBarModule } from '@angular/material/snack-bar';
 import { DetailComponent } from './detail/detail.component';
+import { GioithieuComponent } from './gioithieu/gioithieu.component';
 
 
 
@@ -19,8 +20,9 @@ import { DetailComponent } from './detail/detail.component';
     NarBarComponent,
     ThanhToanComponent,
     DetailComponent,
-   
-   
+    GioithieuComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -30,9 +32,9 @@ import { DetailComponent } from './detail/detail.component';
     FormsModule,
     CdkMenuModule,
     MatSnackBarModule,
-   
-    
-  
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
