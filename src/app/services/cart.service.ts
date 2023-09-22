@@ -14,8 +14,8 @@
         Price: 2000000,
         Discription: " là một cuốn sách nổi tiếng trong lĩnh vực phát triển bản thân và quản lý tình cảm, được viết bởi Dale Carnegie và được xuất bản lần đầu vào năm 1936. Cuốn sách này trở thành một trong những cuốn sách phát triển cá nhân được ưa chuộng và đọc nhiều nhất trên toàn thế giới",
         Status: 72,
-        Image: "https://www.reader.com.vn/uploads/images/2019/10/30/19/dac-nhan-tam_600x865.png"
-        
+        Image: "https://www.reader.com.vn/uploads/images/2019/10/30/19/dac-nhan-tam_600x865.png",
+        IsNew: true, // Thêm trường này để xác định sản phẩm mới
       },
       {
         id :2,
@@ -23,7 +23,8 @@
         Price: 3000000,
         Discription: " là một cuốn sách và một triết lý sống tập trung vào việc tận hưởng cuộc sống một cách chậm rãi, tập trung vào hiện tại và giảm bớt áp lực và căng thẳng trong cuộc sống hàng ngày. Triết lý này thúc đẩy người đọc tập trung vào chất lượng của cuộc sống thay vì số lượng hoạt động hoặc thành tựu.",
         Status: 52,
-        Image: "https://www.elle.vn/wp-content/uploads/2021/07/15/442832/1-sach-hay-song-cham.jpg"
+        Image: "https://www.elle.vn/wp-content/uploads/2021/07/15/442832/1-sach-hay-song-cham.jpg",
+        IsNew: true,
       },
       {
         id :3,
